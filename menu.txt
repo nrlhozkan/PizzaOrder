@@ -1,0 +1,14 @@
+* Lütfen Bir Pizza Tabanı Seçiniz:
+1: Classic
+2: Margherita
+3: Turkish
+4: Sade 
+* ve seçeceğiniz sos:
+11: Olives
+12: Mushrooms
+13: Cheese
+14: Meat
+15: Onion
+16: Corn
+17: Pepperoni
+* Teşekkür ederiz!
