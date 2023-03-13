@@ -171,7 +171,7 @@ def main(menu):
         name = input("What is your name? \n")
 
         ID_number = input("What is your ID number? \n ID number must be 5 digits. \n ID number:")
-        i = 0
+        i = 1
         while len(ID_number) != 5:
             print("Your ID number is not valid. Please try again.")
             ID_number = input("What is your ID number? \n ID number must be 5 digits. \n ID number:")
@@ -179,9 +179,11 @@ def main(menu):
             if i == 3:
                 print("You have tried 3 times. Your order is cancelled. Please try again later.")
                 break
+        if i == 3:
+            break
 
         credit_card = input("What is your credit card number? \n Credit card number must be 5 digits. \n Credit card number:")
-        k = 0
+        k = 1
         while len(credit_card) != 5:
             print("Your credit card number is not valid. Please try again.")
             credit_card = input("What is your credit card number? \n Credit card number must be 5 digits. \n Credit card number:")
@@ -190,7 +192,10 @@ def main(menu):
                 print("You have tried 3 times. Your order is cancelled. Please try again later.")
                 break
 
-        password = input("What is your password? \n")
+        if k == 3:
+            break 
+
+        password = input("What is your password? \n") # password is not validated. It can be anything.
 
         save_order(name, ID_number, credit_card, password, pizza, total_cost)
 
